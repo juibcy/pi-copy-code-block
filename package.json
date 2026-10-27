@@ -1,0 +1,30 @@
+{
+  "name": "pi-copy-code-block",
+  "version": "1.0.0",
+  "description": "Adds clickable copy controls to fenced code blocks in Pi assistant messages.",
+  "type": "module",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "clipboard",
+    "markdown"
+  ],
+  "license": "MIT",
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/index.js"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}
